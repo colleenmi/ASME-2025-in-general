@@ -1,0 +1,511 @@
+<head>
+  <meta charset="utf-8">
+  <title>Product Development | ASME UIUC</title>
+    <link rel="icon" type="image/x-icon" href="asmeimg/ASME_new_logo.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="ASME UIUC, student organization, engineering events, calendar">
+  <meta name="description" content="ASME Product Development Committee">
+
+  <!-- ✅ Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- ✅ Favicon -->
+  <link rel="shortcut icon" href="ico/favicon.png">
+
+  <!-- ✅ Core CSS -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- ✅ Style Libraries -->
+  <link href="css/style-library-1.css" rel="stylesheet">
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <link href="css/owl.transitions.css" rel="stylesheet">
+  <link href="css/magnific-popup.css" rel="stylesheet">
+
+  <!-- ✅ Block Styles (include only those you're actively using) -->
+  <link href="css/header-1.css" rel="stylesheet">
+  <link href="css/promo-1.css" rel="stylesheet">
+  <link href="css/content1-1.css" rel="stylesheet">
+  <link href="css/content1-4.css" rel="stylesheet">
+  <link href="css/content2-3.css" rel="stylesheet">
+  <link href="css/footer-1.css" rel="stylesheet">
+  <link href="css/footer-2.css" rel="stylesheet">
+  <link href="css/footer-3.css" rel="stylesheet">
+  <link href="css/footer-4.css" rel="stylesheet">
+  <link href="css/footer-5.css" rel="stylesheet">
+
+  <!-- ✅ jQuery and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- ✅ Force Poppins globally and underline links -->
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif !important;
+    }
+    a {
+      text-decoration: underline !important;
+    }
+  </style>
+
+  <!-- ✅ Legacy IE support -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. --><!--[if lt IE 9]>
+	
+	
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+	<style type="text/css">
+	    body {
+      font-family: "Poppins", sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .page {
+      padding: 0px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    h1 {
+      font-family: "Poppins", sans-serif;
+      color: #003366;
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .subtitle {
+      font-style: italic;
+      font-size: 16px;
+      color: #333;
+      margin: 5px 0 20px 0;
+    }
+
+    h2 {
+      color: darkblue;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    p {
+      margin: 10px 0;
+      font-size: 17px;
+      font-weight: bold;
+      color: darkblue;
+      font-family: "Poppins", sans-serif;
+
+    }
+
+    .contact {
+      font-size: 16px;
+      color: darkblue;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+
+    .image-container {
+      flex: 1;
+      text-align: left;
+      margin-right: 20px;
+    }
+
+    .image-container img {
+      max-width: 80%;
+      height: auto;
+    }
+
+    .text-container {
+      flex: 2;
+    }
+        body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+.containerNew {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+/* Ensuring `.bottom-row` has 2 columns on large screens */
+.bottom-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/* Ensure 1-column layout for both tablets and mobile */
+@media (max-width: 1024px) {
+    .containerNew, .bottom-row {
+        grid-template-columns: 1fr; /* Stack everything */
+        justify-items: center; /* Centers the cards */
+    }
+}    .card {
+      text-align: left;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      background: #fff;
+      font-family: "Poppins", sans-serif;
+
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      margin: 10px 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .card-content p {
+      font-size: 16px;
+      color: black;
+      font-weight: normal;
+    }
+
+
+    .slider {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: auto;
+    }
+
+    .slider-images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    .slider-images img {
+      width: 100%;
+      height: auto;
+      flex-shrink: 0;
+    }
+    
+    .slider-prev,
+    .slider-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      font-size: 18px;
+      padding: 8px;
+      cursor: poPoppins;
+      z-index: 10;
+    }
+    
+    .slider-prev {
+      left: 10px;
+    }
+    
+    .slider-next {
+      right: 10px;
+    }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensures navbar elements don't overflow */
+  background-color: #001f3f; /* Ensures consistent background */
+  padding: 10px 20px;
+}
+
+.navbar-toggler {
+  background-color: #001f3f !important; /* Matches navbar */
+  border: none;
+  padding: 10px;
+}
+
+/* Ensures the hamburger icon is white */
+.navbar-toggler-icon {
+  filter: invert(1); /* Makes it white */
+}
+
+
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    text-align: center;
+    background-color: #001f3f; /* Ensure background stays */
+  }
+  
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-item {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Reduce font size for smaller screens */
+  .navbar-nav li a {
+    font-size: 14px !important;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav li a {
+    font-size: 12px !important;
+    padding: 8px;
+  }
+  
+  .navbar-header img {
+    max-width: 150px; /* Shrink logo */
+    height: auto;
+  }
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar-header img {
+    max-width: 100px !important; /* Reduce size */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #13294B; /* Ensures background stays consistent */
+    position: absolute;
+    width: 100%;
+    top: 50px; /* Adjusts to fit below the navbar */
+    left: 0;
+    z-index: 1000; /* Ensures it appears on top */
+  }
+}
+
+	</style>
+	
+	
+</head>
+
+<body>
+<div class="page" id="page"><!-- HEADER 1 --><!--// END HEADER 1 --><!-- Start Content Block 1-4 --><!-- // End Content Block 1-4 --><!-- Start Content Block 1-3 --><!--// END Content Block 1-3 --><!-- Start Footer 1-1 --><!--// END Footer 1-1 --><!-- Start Footer Copyright Bar --><!--// END Footer Copyright Bar --><!-- HEADER 1 --><!--// END HEADER 1 --><!-- Start Team 1-1 --><!--// End Team 1-1 --><!-- Start Team 1-1 --><!--// End Team 1-1 --><!-- Start Team 1-1 --><!--// End Team 1-1 --><!-- Start Team 1-1 --><!--// End Team 1-1 --><!-- Start Team 1-1 --><!--// End Team 1-1 --><!-- HEADER 1 --><!--// END HEADER 1 --><!-- Start Content Block 1-4 --><!-- // End Content Block 1-4 --><!-- Start Content Block 1-3 --><!--// END Content Block 1-3 --><!-- Start Footer 1-1 --><!--// END Footer 1-1 --><!-- Start Footer Copyright Bar --><!--// END Footer Copyright Bar --><!-- HEADER 1 --><!--// END HEADER 1 --><!-- Start Content Block 3-7 --><!--// END Content Block 3-7 --><!-- Start Content Block 1-5 v2 --><!-- // End Content Block 1-5 v2 --><!-- Start Content Block 1-6 --><!-- // End Content Block 1-6 --><!-- Start Footer 1-1 --><!--// END Footer 1-1 --><!-- HEADER 1 --><!--// END HEADER 1 --><!-- Start Team 1-1 --><!--// End Team 1-1 --><!-- Start Team 1-1 --><!--// End Team 1-1 --><!-- Start Team 1-1 --><!--// End Team 1-1 --><!-- Start Team 1-1 --><!--// End Team 1-1 --><!-- Start Team 1-1 --><!--// End Team 1-1 --><!-- HEADER 1 -->
+<header id="header-1"><!-- Navbar -->
+<nav class="main-nav navbar-fixed-top headroom headroom--pinned"  style="background-color: #13294B;">
+<div class="container"><!-- Brand and toggle -->
+<div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+        </button>
+        <img class="brand-img img-responsive" src="asmeimg/ASME_new_logo.png" /></div>
+<!-- Navigation -->
+
+<div class="collapse navbar-collapse" id="navbar-menu">
+<ul class="nav navbar-nav navbar-right">
+       <li><a href="index.html" style="color: white;"><b>Home</b></a></li>
+                <li><a href="news.html" style="color: white;">Join Us</a></li>
+
+                <li><a href="getinvolved.html" style="color: white;">Calendar</a></li>
+                 <li><a href="gallery.html" style="color: white;">Committees</a></li>
+                  <li><a href="workshops.html" style="color: white;">Workshops</a></li>
+                <li><a href="aboutus.html" style="color: white;">Exec Board</a></li>
+                <li><a href="contactus.html" style="color: white;">Contact Us</a></li>
+                <li><a href="podcasts.html" style="color: white;">Podcasts</a></li>
+                <!--<li><a href="resources.html" style="color: white;">Resources</a></li>-->
+               <li><a href="corp.html" style="color: white;">Corporate</a></li>
+</ul>
+<!--//nav--></div>
+<!--// End Navigation --></div>
+<!--// End Container --></nav>
+<!--// End Navbar --></header>
+<!--// END HEADER 1 -->
+
+<section class="content-1-9 content-block" id="content-1-9">
+<div class="container">
+<div class="underlined-title">
+<div class="editContent">
+<h1>Product Development</h1>
+</div>
+
+
+
+    <script>
+  // Select all sliders on the page
+  const sliders = document.querySelectorAll('.slider');
+
+  sliders.forEach(slider => {
+    const sliderImages = slider.querySelector('.slider-images'); // Images container for this slider
+    const images = slider.querySelectorAll('.slider-images img'); // All images in this slider
+    const prevButton = slider.querySelector('.slider-prev'); // Previous button for this slider
+    const nextButton = slider.querySelector('.slider-next'); // Next button for this slider
+
+    let currentIndex = 0; // Track the current image index
+
+    // Function to update the slider position
+    function updateSlider() {
+      const offset = -currentIndex * 100; // Calculate horizontal offset
+      sliderImages.style.transform = `translateX(${offset}%)`;
+    }
+
+    // Attach event listener to the Previous button
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length; // Wrap around if needed
+      updateSlider();
+    });
+
+    // Attach event listener to the Next button
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % images.length; // Wrap around if needed
+      updateSlider();
+    });
+  });
+</script>
+
+
+
+
+<div class="row">
+<div class="col-md-4 col-sm-12 col-xs-12 pad25">
+<div class="col-xs-2"></div>
+
+
+
+<div class="col-xs-10">
+<div class="editContent">
+</div>
+
+</div>
+<!-- /.row --></div>
+<!-- /.container --></section>
+
+<!--<center>-->
+<!--<section class="content-1-9 content-block" id="content-1-9">-->
+<!--<div class="container">-->
+<!--<div class="editContent">-->
+<!--<div id="calendar"><iframe frameborder="0" height="400" scrolling="no" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=500&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=asme.mechse%40gmail.com&amp;color=%232F6309&amp;ctz=America%2FChicago" style="border-width:0" width="400"></iframe></div>-->
+<!--</div>-->
+<!--</div>-->
+<!-- /.container --></section>
+<!--</center>-->
+
+
+
+</div>
+<section class="content-1-9 content-block" id="content-1-9" style="margin-top: 30px; padding-top: 0; margin-bottom: 60px;">
+
+<!--TY chatgpt what a goat-->
+
+<!-- // End Content Block 1-9 --><!-- Start Footer 1-1 --><!-- Start Footer 1-1 -->
+<section class="content-block-nopad" style="background-color: #13294B; font-family: 'Poppins', sans-serif;">
+  <div class="container footer-1-1">
+    <div class="row">
+      <div class="col-sm-5">
+        <img class="brand-img img-responsive" src="asmeimg/ASME_new_logo.png" />
+      </div>
+
+      <div class="col-sm-6 col-sm-offset-1">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="editContent">
+              <h4 style="color: white;"><b>Shortcuts</b></h4>
+            </div>
+
+            <div class="editContent">
+              <ul style="list-style: none; padding: 0;">
+                <li><a href="index.html" style="color: white;"><b>Home</b></a></li>
+                <li><a href="news.html" style="color: white;">Join Us</a></li>
+
+                <li><a href="getinvolved.html" style="color: white;">Calendar</a></li>
+                 <li><a href="gallery.html" style="color: white;">Committees</a></li>
+                <li><a href="aboutus.html" style="color: white;">Exec Board</a></li>
+                <li><a href="corp.html" style="color: white;">Corporate</a></li>
+
+                <li><a href="contactus.html" style="color: white;">Contact Us</a></li>
+                <li><a href="podcasts.html" style="color: white;">Podcasts</a></li>
+                <li><a href="resources.html" style="color: white;">Resources</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="editContent">
+              <h4>&nbsp;</h4><br />
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="editContent"></div>
+            <div class="col-lg-5 col-md-6 col-sm-12 pull-left"></div>
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+  </div>
+</section>
+<!--// END Footer 1-1 -->
+
+<!-- Start Footer Copyright Bar -->
+<div class="copyright-bar bg-black" style="font-family: 'Poppins', sans-serif;">
+  <div class="container">
+    <div class="editContent">
+      <p class="pull-left small" style="color: white;">&copy; bskit - BootstrapCreator.com</p>
+    </div>
+    <div class="editContent" style="text-align: right;">
+  <a href="your-target-link.html" target="_blank">
+    <img src="asmeimg/brendan_orsi.jpg" alt="Mini Icon" style="height: 24px; margin-bottom: -2px;">
+  </a>
+  <p class="small" style="color: white; margin-top: 4px;">Made with ❤️ in Berlin</p>
+</div>
+  </div>
+</div>
+<!--// END Footer Copyright Bar --><!-- /#page --><!-- Scripts at the end... you know the score! --><!-- Core Scripts (Do not remove) --><script type="text/rocketscript" data-rocketsrc="js/jquery-1.11.1.min.js" data-rocketoptimized="true"></script><script type="text/rocketscript" data-rocketsrc="js/bootstrap.min.js" data-rocketoptimized="true"></script><script type="text/rocketscript" data-rocketsrc="js/bootstrap-hover-dropdown.min.js" data-rocketoptimized="true"></script><!-- Vendor Scripts (Feel free to remove any that you aren't using in your final export) --><script type="text/rocketscript" data-rocketsrc="js/modernizr.custom.js" data-rocketoptimized="true"></script><script type="text/rocketscript" data-rocketsrc="js/headroom.js" data-rocketoptimized="true"></script><!-- Header 1 --><script type="text/rocketscript" data-rocketsrc="js/jquery.headroom.js" data-rocketoptimized="true"></script><!-- Header 1 --><script type="text/rocketscript" data-rocketsrc="js/count.down.min.js" data-rocketoptimized="true"></script><!-- Promo 2 Countdown --><script type="text/rocketscript" data-rocketsrc="js/owl.carousel.min.js" data-rocketoptimized="true"></script><!-- Owl Carousel --><script type="text/rocketscript" data-rocketsrc="js/jquery.counterup.min.js" data-rocketoptimized="true"></script><!-- Content 2-7 Counter --><script type="text/rocketscript" data-rocketsrc="js/waypoints.min.js" data-rocketoptimized="true"></script><!-- Content 2-7 Counter --><script type="text/rocketscript" data-rocketsrc="js/jquery.isotope.min.js" data-rocketoptimized="true"></script><!-- Gallery Filter --><script type="text/rocketscript" data-rocketsrc="js/jquery.magnific-popup.min.js" data-rocketoptimized="true"></script><!-- Gallery Popup --><script type="text/rocketscript" data-rocketsrc="js/sendmail.js" data-rocketoptimized="true"></script><!-- Contact Form --><script type="text/rocketscript" data-rocketsrc="js/contact-form.php" data-rocketoptimized="true"></script><script type="text/javascript" src="http://www.designbootstrap.com/bootstrapbuilder/elements/js/contact-form.php"></script><!-- Contact Form --><!--
+	<script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+	--><!-- Theme Scripts (Do not remove) -->
+	
+	<script type="text/rocketscript" data-rocketsrc="js/bskit-scripts.js" data-rocketoptimized="true"></script></body>
+
+
