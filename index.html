@@ -11,8 +11,8 @@
 <meta name="keywords" content="bskit, bootstrap starter kit, bootstrap builder"> <!--goofy we don't need to include-->
 <meta name="description" content="ASME @ UIUC Home Page"> <!--can be displayed in search engine-->
 
-=<link href="https://fonts.cdnfonts.com/css/cooper-hewitt" rel="stylesheet">  <!--link Cooper Hewitt font sid wanted-->
-
+	<!-- âœ… Load Poppins font -->
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <!-- Weird FREAKY cloudflare things I don't know about -->
 <script type="text/javascript"> 
   try {
@@ -128,9 +128,7 @@ type="text/javascript" src="http://www.designbootstrap.com/cdn-cgi/nexp/dok3v=16
     * {
       font-family: 'Poppins', sans-serif !important;
     }
-     a {
-      text-decoration: underline !important;
-    }
+  
   </style>
 
   <!-- JS libraries -->
@@ -146,18 +144,17 @@ type="text/javascript" src="http://www.designbootstrap.com/cdn-cgi/nexp/dok3v=16
 
 	<style type="text/css">
 	        body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Cooper Hewitt', sans-serif;
             background: linear-gradient(135deg, #eef2f3, #8e9eab);
             color: #333;
             margin: 0;
         }
         a {
-      color: #13294B;
+      color: #0b233b;
     }
     
     a:hover, a:focus {
-      color: #0f2233;
-      text-decoration: underline;
+      color: #0b233b;
     }
 
         .membership-container {
@@ -172,14 +169,14 @@ type="text/javascript" src="http://www.designbootstrap.com/cdn-cgi/nexp/dok3v=16
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap; /* Ensures navbar elements don't overflow */
-  background-color: #001f3f; /* Ensures consistent background */
+  background-color: #0b233b; /* Ensures consistent background */
   padding: 10px 20px;
   width: 100vw; /* Ensures full width coverage */
   min-height: 60px; /* Prevents shrinking too much */
 }
 
 .navbar-toggler {
-  background-color: #001f3f !important; /* Matches navbar */
+  background-color: #0b233b !important; /* Matches navbar */
   border: none;
   padding: 10px;
 }
@@ -189,12 +186,18 @@ type="text/javascript" src="http://www.designbootstrap.com/cdn-cgi/nexp/dok3v=16
   filter: invert(1); /* Makes it white */
 }
 
-
+.dropdown-menu {
+    background-color: rgba(11, 35, 59, 0.7) !important;
+}
+.dropdown-menu a {
+    font-weight: normal; /* Removes bold */
+    text-decoration: none; /* Removes underline */
+}
 
 @media (max-width: 991px) {
   .navbar-collapse {
     text-align: center;
-    background-color: #001f3f; /* Ensure background stays */
+    background-color: #0b233b; /* Ensure background stays */
   }
   
   .navbar-nav {
@@ -259,7 +262,7 @@ img {
 
 /*.containerTeamArea {
   display: flex;
-  background-color: #001f3f;
+  background-color: #0b233b;
   padding: 0px;
 }*/
 /* Video container and background */
@@ -438,29 +441,7 @@ img {
     <div id="page" class="page">
         
     <!-- HEADER 1 -->
-	
-    <!--// END HEADER 1 --><!-- Start Content Block 1-4 -->
-	
-    <!-- // End Content Block 1-4 --><!-- Start Content Block 1-3 -->
-	
-    <!--// END Content Block 1-3 --><!-- Start Footer 1-1 -->
-	
-    <!--// END Footer 1-1 --><!-- Start Footer Copyright Bar -->
-
-<!--// END Footer Copyright Bar --><!-- HEADER 1 -->
-	
-    <!--// END HEADER 1 --><!-- Start Team 1-1 -->
-    
-    <!--// End Team 1-1 --><!-- Start Team 1-1 -->
-    
-    <!--// End Team 1-1 --><!-- Start Team 1-1 -->
-    
-    <!--// End Team 1-1 --><!-- Start Team 1-1 -->
-    
-    <!--// End Team 1-1 --><!-- Start Team 1-1 -->
-    
-    <!--// End Team 1-1 --><!-- HEADER 1 -->
-	<header id="header-1">
+<header id="header-1">
 	
 		<!-- Navbar -->
 		<nav class="main-nav navbar-fixed-top headroom headroom--pinned" style="background-color: #13294B;">
@@ -478,16 +459,44 @@ img {
                 <!-- Navigation -->
                 <div class="collapse navbar-collapse" >
                     <ul class="nav navbar-nav navbar-right">
-	<li class="active nav-item"><a href="index.html" style="font-size: 99%;">Home</a></li>
-    <li class="nav-item"><a href="news.html" style="font-size: 99%;">Join Us</a></li>
-    <li class="nav-item"><a href="getinvolved.html" style="font-size: 99%;">Calendar</a></li>
-    <li class="nav-item"><a href="gallery.html" style="font-size: 99%;">Committees</a></li>
-    <li class="nav-item"><a href="workshops.html" style="font-size: 99%;">Workshops</a></li>
-    <li class="nav-item"><a href="aboutus.html" style="font-size: 99%;">Exec Board</a></li>
-    <li class="nav-item"><a href="contactus.html" style="font-size: 99%;">Contact Us</a></li>
-    <li class="nav-item"><a href="podcasts.html" style="font-size: 99%;">Podcasts</a></li>
-    <!--<li class="nav-item"><a href="resources.html" style="font-size: 99%;">Resources</a></li>-->
-      <li class="nav-item"><a href="corp.html" style="font-size: 99%;">Corporate</a></li>
+    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" style="font-size: 99%;" data-toggle="dropdown"> About <b class="caret"></b> </a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="contactus.html" target="_blank" >Contact Us</a></li>
+        <li><a class="dropdown-item" href="aboutus.html" target="_blank" >Exec Board</a></li>
+        <li><a class="dropdown-item" href="podcasts.html" target="_blank">Podcasts</a></li>
+        <li><a class="dropdown-item" href="corp.html" target="_blank">Corporate</a></li>
+
+    </ul>
+</li>
+    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" style="font-size: 99%;" data-toggle="dropdown"> Join <b class="caret"></b> </a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="news.html" target="_blank" >Membership</a></li>
+
+    </ul>
+</li>
+ <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" style="font-size: 99%;" data-toggle="dropdown"> Events <b class="caret"></b> </a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="getinvolved.html" target="_blank" >Calendar</a></li>
+        <li><a class="dropdown-item" href="workshops.html" target="_blank">Workshops</a></li>
+
+    </ul>
+<li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" style="font-size: 99%;" data-toggle="dropdown">
+        Committees <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="specialprojects.html" target="_blank">Special Projects</a></li>
+                <li><a class="dropdown-item" href="sustainability.html" target="_blank">Sustainability</a></li>
+                <li><a class="dropdown-item" href="productdev.html" target="_blank">Product Development</a></li>
+                <li><a class="dropdown-item" href="competitions.html" target="_blank">Competitions</a></li>
+                <li><a class="dropdown-item" href="outreach.html" target="_blank">Outreach</a></li>
+            </ul>
+        </li>
+    </ul>
+</li>
 					</ul><!--//nav-->
                 </div>
                 <!--// End Navigation -->
@@ -495,7 +504,6 @@ img {
             <!--// End Container -->
 		</nav>
 		<!--// End Navbar -->
-		
     </header>
     <!--// END HEADER 1 --><!-- Start Content Block 1-4 -->
 	<section id="content-1-4" class="content-block-nopad content-1-4" style="margin-bottom: 0px;">
@@ -544,11 +552,11 @@ img {
                     <!-- Buttons Section -->
                     <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 20px;">
                         <button onclick="window.location.href='https://asme-illinois.slack.com/join/shared_invite/zt-1exxh7mdc-g5I61i4dzN6ogpvDmkZMtw#/shared-invite/email';"
-                                style="background-color: #001f3f; font-family: Inter, sans-serif; font-weight: bold; color: white; padding: 15px; font-size: 1em; border: none; border-radius: 5px; cursor: pointer;">
+                                style="background-color: #0b233b; font-family: Inter, sans-serif; font-weight: bold; color: white; padding: 15px; font-size: 1em; border: none; border-radius: 5px; cursor: pointer;">
                             JOIN OUR SLACK!
                         </button>
                       <button onclick="window.location.href='getinvolved.html';"
-                                style="background-color: #001f3f; font-family: Inter, sans-serif; font-weight: bold; color: white; padding: 15px; font-size: 1em; border: none; border-radius: 5px; cursor: pointer; href=aboutus.html">
+                                style="background-color: #0b233b; font-family: Inter, sans-serif; font-weight: bold; color: white; padding: 15px; font-size: 1em; border: none; border-radius: 5px; cursor: pointer; href=aboutus.html">
                         CALENDAR
                       </button>
 
@@ -636,4 +644,6 @@ img {
 	<script src="https://maps.google.com/maps/api/js?sensor=true"></script>
 	--><!-- Theme Scripts (Do not remove) -->
 	
-	<script type="text/rocketscript" data-rocketsrc="js/bskit-scripts.js" data-rocketoptimized="true"></script></body>
+	<script type="text/rocketscript" data-rocketsrc="js/bskit-scripts.js" data-rocketoptimized="true"></script>
+	
+</body>
